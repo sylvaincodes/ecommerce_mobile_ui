@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce_mobile_app/pages/Homepage.dart';
+import 'package:ecommerce_mobile_app/pages/HomePage.dart';
+import 'package:ecommerce_mobile_app/pages/CartPage.dart';
+
 
 void main()  => runApp(MyApp());
 
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
             fontFamily: 'Nunito'
           ),
           routes : {
-            "/" : (context) => Homepage()
+            "/" : (context) => HomePage(),
+            "cartPage" : (context) => CartPage()
           },
         );
   }
