@@ -15,6 +15,7 @@ class ItemsWidget extends StatelessWidget {
             margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(20)),
+            
             child: Column(
               children: [
                 Row(
@@ -35,7 +36,9 @@ class ItemsWidget extends StatelessWidget {
                   ],
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, "itemPage");
+                  },
                   child: Container(
                     margin: EdgeInsets.all(8),
                     child: Image.asset("images/$i.png", height: 90, width: 90),
